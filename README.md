@@ -20,17 +20,17 @@ A Railway template for [OpenClaw](https://github.com/openclaw/openclaw), the sel
 
 Optional, set them in the service's Variables tab when you need them:
 
-- `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `OPENROUTER_API_KEY` or another provider's key (see the [providers docs](https://docs.openclaw.ai/providers)). You can also add providers later with `openclaw onboard` in the shell.
-- `TELEGRAM_BOT_TOKEN`, `DISCORD_BOT_TOKEN` and other channel credentials (see [channels](https://docs.openclaw.ai/channels)).
+- A provider key such as `ANTHROPIC_API_KEY`, `OPENAI_API_KEY` or `OPENROUTER_API_KEY`, if you prefer a variable to adding the provider in the Control UI (see the [providers docs](https://docs.openclaw.ai/providers)).
+- Channel credentials such as `TELEGRAM_BOT_TOKEN` (see [channels](https://docs.openclaw.ai/channels)).
 - `OPENCLAW_PUBLIC_ORIGIN`: the URL you open the Control UI from, when it isn't the Railway domain (a custom domain, e.g. `https://claw.example.com`).
 
 ## First login
 
-1. Open the service's Railway domain and paste `OPENCLAW_GATEWAY_TOKEN` (service → Variables) into **Gateway secret**.
-2. Choose **Pair this browser**. The page shows a command such as `openclaw pair ABCD-EFGH`.
+1. Open the service's Railway domain, paste `OPENCLAW_GATEWAY_TOKEN` (service → Variables) into **Gateway secret** and click **Connect**.
+2. The page says **Approve this browser** and shows a command such as `openclaw devices approve 6bfa8820-…`.
 3. Open the service shell (`railway ssh`, or right-click the service → SSH) and run that command. The page connects by itself.
 
-Then connect a model: run `openclaw onboard` in the shell, or set a provider key variable and pick the model in the Control UI.
+Then connect a model in **Settings → Models → Connect provider**, or run `openclaw onboard` in the shell. Chat channels (Telegram, Discord, Slack, WhatsApp …) are set up in **Settings → Channels**.
 
 ## Updates
 
