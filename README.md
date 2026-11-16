@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/openclaw-9?utm_medium=integration&utm_source=button&utm_campaign=openclaw)
+
 # OpenClaw on Railway
 
 A Railway template for [OpenClaw](https://github.com/openclaw/openclaw), the self-hosted personal AI agent: one gateway with its web Control UI, reachable from your browser and from chat apps (Telegram, Discord, Slack, WhatsApp and more).
